@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* ------------------------------------------------------- */
+                     /* header */
+/* ------------------------------------------------------- */
+header{
+    width: 100%;
+    position: relative;
+    height: 300px;
+}
+.header_logo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    text-align: center;
+    height: 300px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.logo{
+    width: 100%;
+    height: 250px;
+    background-image: url(./resources/img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header_banner{
+    position: absolute;
+    left: 400px;
+    top: 0px;
+    height: 300px;
+    width: calc(100% - 400px);
+    overflow: hidden;
+    text-align: center;
+}
+.header_banner img{
+    width: 100%;
+    min-height: 300px;
+}
+
+
+/* ------------------------------------------------------- */
+                     /* footer */
+/* ------------------------------------------------------- */
+footer{
+    background-color: #01596F;
+    width: 100%;
+    position: relative;
+    display: flex;
+    color: rgb(216, 216, 216);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer_address{
+    flex-basis: 40%;
+    padding-left: 30px;
+}
+.footer_address-title{
+    padding-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.footer_address-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+}
+.footer_address-contact i{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+
+.footer_address-contact i:hover{
+    background-color: bisque;
+}
+
+.footer_container{
+    flex-basis: 30%;
+}
+
+.footer-title {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+.footer-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgb(219, 219, 219);
+    text-align: center;
+    font-size: 1.2rem;
+}
