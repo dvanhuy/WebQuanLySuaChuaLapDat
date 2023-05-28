@@ -84,7 +84,9 @@ header{
     background-color: #08547E;  
     color: white;
     padding: 12px 20px;
-    border-bottom: 1px solid wheat;
+}
+.button_info-detail a{
+    text-decoration: none;
 }
 .button_info-detail li:last-child{
     border-bottom: none;
@@ -107,12 +109,17 @@ nav ul{
     font-size: 10px;
 }
 
+nav ul a{
+    text-decoration: none;
+}
+
 nav ul li{
     font-size: 1.1rem;
     color: white;
     display: inline-block;
     padding: 20px 40px;
     background-color: #026876;
+    cursor: pointer;
 }
 
 nav ul li:hover{
@@ -124,16 +131,45 @@ nav ul li:hover{
                      /* main */
 /* ------------------------------------------------------- */
 
+main{
+    position: relative;
+}
 .header_name_title{
     position: relative;
     margin-top: 30px;
     margin-left: 50px;
-    padding: 10px;
     width: 150px;
     background-color: #86f1ff;
     margin-bottom: 20px;
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    line-height: 40px;
 }
-.header_name_title::before{
+.header_name_titlesub{
+    position: relative;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding-right: 20px ;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: #86f1ff;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    line-height: 40px;
+}
+.header_name_titlesub::after{
+    position: absolute;
+    content: "";
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 100% 50%);
+    background-color: #86f1ff;
+    height: 40px;
+    width: 20px;
+    top: 0px;
+    left: -19px;
+}
+.header_name_title::before,.header_name_titlesub::before{
     position: absolute;
     content: "";
     width: 0px;
@@ -141,8 +177,8 @@ nav ul li:hover{
     border-left: 20px solid #86f1ff;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    top: -1px;
-    right: -18px;
+    top: 0px;
+    right: -19px;
 }
 .header_name_title i{
     margin-left: 20px;
