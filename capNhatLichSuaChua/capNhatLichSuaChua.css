@@ -68,6 +68,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    gap: 50px;
 }
 .footer_main_button button{
     background-color: #9AFF8A;
@@ -77,6 +78,11 @@
     font-weight: bold;
     border: none;
     border-radius: 20px;
+}
+
+.footer_main_button button#xoa{
+    background-color: red;
+    color: white;
 }
 
 .first_container_ct_1_content_image input{
