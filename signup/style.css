@@ -10,20 +10,22 @@
 }
 .first_container_acc{
     position: relative;
-    margin-top: 10px;
+    margin-top: 30px;   
     margin-bottom: 10px;
-    width: 100%;
-    overflow: hidden;
     display: grid;
-    grid-template-columns: 300px calc(100% - 300px);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
     align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    column-gap: 40px;
 }
 
 .first_container_acc-avatar{
     width: 100%;
     overflow: hidden;
-    grid-row: 1/3;
+    grid-row: 1/4;
+    grid-column: 2/3;
     height: 200px;
     margin-left: 60px;
 }
@@ -39,39 +41,6 @@
     font-weight: bold;
 }
 .first_container_acc input[type="text"]{
-    display: block;
-    width: 70%;
-    max-width: 400px;
-    font-size: 0.9rem;
-    padding: 7px 20px;
-    font-weight: 600;
-}
-
-.f_c_a-hovaten{
-    margin-top: -25px;
-}
-
-.second_container_acc{
-    position: relative;
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    display: grid;
-    row-gap: 20px;
-    column-gap: 40px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-}
-
-.second_container_acc label{
-    display: block;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-.second_container_acc input[type="text"]{
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -80,7 +49,27 @@
     font-weight: 600;
 }
 
-.second_container_acc input[type="date"]{
+.second_container_acc{
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 40px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.second_container_acc label{
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.second_container_acc input{
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -91,14 +80,16 @@
 .third_container_acc{
     position: relative;
     height: 40px;
-    margin-right: 60px;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-sizing: border-box;
 }
 .third_container_acc > button{
+    font-size: 1.1rem;
     position: relative;
-    float: right;
     padding: 10px 20px;
     background-color: #9AFF8A;
+    width: 200px;
     border: none;
     border-radius: 20px;
     cursor: pointer;

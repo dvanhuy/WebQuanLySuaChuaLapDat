@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Công ty Ba Năm</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./datlichlapdat.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <script src="../script.js" defer></script>
 </head>
@@ -56,53 +56,56 @@
             </div>
             <div class="header_name_titlesub">
                 <i class="fa-solid fa-house"></i>
-                <span>Cập nhật thông tin</span> 
+                <span>Đặt lịch lắp đặt</span> 
             </div>
-            
         </div>
-        <div class="container_main_account">
-            <div class="first_container_acc">
-                <div class="first_container_acc-avatar">
-                    <img src="../resources/img/avatar.png" alt="">
+        <div class="header_title_main">MỜI QUÝ KHÁCH ĐẶT LỊCH SỬA CHỮA</div>
+        <div class="container_main_content">
+            <div class="first_container_ct">
+                <div class="first_container_ct_1_title">
+                    THÔNG TIN KHÁCH HÀNG
                 </div>
-                <div class="f_c_a-madinhdanh">
-                    <label for="madinhdanh">Mã định danh</label>
-                    <input type="text" id="madinhdanh">
-                </div>
-                <div class="f_c_a-hovaten">
-                    <label for="hovaten">Họ và tên</label>
-                    <input type="text" id="hovaten">
-                </div>
-            </div>
-            <div class="second_container_acc">
-                <div class="f_c_a-tentaikhoan">
-                    <label for="tentaikhoan">Tên tài khoản</label>
-                    <input type="text" id="tentaikhoan">
-                </div>
-                <div class="f_c_a-matkhau">
-                    <label for="matkhau">Mật khẩu</label>
-                    <input type="text" id="matkhau">
-                </div>
-                <div class="f_c_a-sodienthoai">
-                    <label for="sodienthoai">Số điện thoại</label>
-                    <input type="text" id="sodienthoai">
-                </div>
-                <div class="f_c_a-gmail">
-                    <label for="gmail">Gmail</label>
-                    <input type="text" id="gmail">
-                </div>
-                <div class="f_c_a-ngaysinh">
-                    <label for="ngaysinh">Ngày sinh</label>
-                    <input type="date" id="ngaysinh">
-                </div>
-                <div class="f_c_a-diachi">
-                    <label for="diachi">Địa chỉ</label>
-                    <input type="text" id="diachi">
+                <div class="first_container_ct_1_content">
+                    <div>
+                        <label for="hovaten">Họ và tên</label>
+                        <input type="text" id="hovaten">
+                    </div>
+                    <div>
+                        <label for="sodienthoai">Số điện thoại</label>
+                        <input type="text" id="sodienthoai">
+                    </div>
+                    <div>
+                        <label for="thoigianlapdat">Thời gian sửa chữa</label>
+                        <input type="datetime-local" id="thoigianlapdat">
+                    </div>
+                    <div>
+                        <label for="diachicuthe">Địa chỉ cụ thể </label>
+                        <input type="text" id="diachicuthe">
+                    </div>
                 </div>
             </div>
-            <div class="third_container_acc">
-                <button type="submit">Xác nhận</button>
+            <div class="second_container_ct">
+                <div class="first_container_ct_1_title">
+                    SẢN PHẨM
+                </div>
+                <div class="first_container_ct_1_content">
+                    <div>
+                        <label for="thietbi">Thiết bị</label>
+                        <input type="text" id="thietbi">
+                    </div>
+                    <div class="first_container_ct_1_content_image">
+                        <label for="hinhanh">Hình ảnh</label>
+                        <input type="file" id="hinhanh">
+                    </div>
+                    <div class="first_container_ct_1_content_detail">
+                        <label for="tinhtrang">Mô tả tình trạng</label>
+                        <input type="text" id="tinhtrang">
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="footer_main_button">
+            <button>ĐẶT LỊCH</button>
         </div>
     </main>
     <footer>
