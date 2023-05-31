@@ -1,0 +1,11 @@
+.container_main_content{
+    box-sizing: border-box;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
