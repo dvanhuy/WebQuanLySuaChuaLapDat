@@ -2,38 +2,50 @@
     position: relative;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 1.4rem;
     font-weight: bold;
 }
 .container_main_content{
     box-sizing: border-box;
     position: relative;
-    width: 70%;
+    width: 400px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 20px;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.first_container_ct_1_title{
-    font-size: 1.2rem;
-    color: blue;
+.footer_main_button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+.footer_main_button button{
+    background-color: #9AFF8A;
+    padding: 10px 20px;
+    width: 130px;
+    font-size: 1rem;
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+}
+.footer_main_button button#xoa{
+    background-color: red;
+    color: white;
 }
 
-.first_container_ct_1_content{
-    border: 1px solid black;
-    width: 300px;
-    padding: 20px;
+.first_container_ct{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .first_container_ct label{
     display: block;
     font-size: 0.9rem;
@@ -49,19 +61,12 @@
     font-weight: 600;
 }
 
-.second_container_ct label{
-    display: block;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-.second_container_ct input{
+.first_container_ct textarea{
     box-sizing: border-box;
-    display: block;
     width: 100%;
     font-size: 0.9rem;
+    height: 100px;
     padding: 7px 20px;
-    font-weight: 600;
 }
 
 .more_info_box{
@@ -87,17 +92,3 @@
     font-size: 0.9rem;
 }
 
-.footer_main_button{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.footer_main_button button{
-    background-color: #9AFF8A;
-    padding: 10px 20px;
-    width: 200px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 20px;
-}

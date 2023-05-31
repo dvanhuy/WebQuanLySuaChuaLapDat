@@ -74,7 +74,7 @@
     background-color: #9AFF8A;
     padding: 10px 20px;
     width: 200px;
-    font-size: 1.1  rem;
+    font-size: 1rem;
     font-weight: bold;
     border: none;
     border-radius: 20px;
@@ -92,6 +92,10 @@
     padding-bottom: 10px;
 }
 
-.first_container_ct_1_content_detail input{
+.first_container_ct_1_content_detail textarea{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.9rem;
     height: 100px;
+    padding: 7px 20px;
 }
